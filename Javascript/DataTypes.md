@@ -46,6 +46,8 @@ Can hold any type of **Primitive** or **Complex Data**
 
 ## OBJECTS
 
+Objects can also have methods inside it which are simply functions that we can call on that object
+
 ```javascript lineons
     let person = {
     name: "Alice",
