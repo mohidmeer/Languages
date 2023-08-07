@@ -26,7 +26,7 @@
 ## UNDEFINED
 
 ```javascript lineons
-    let undefinedVariable
+    let undefinedVariable =undefined
 ```
 
 ## NULL
