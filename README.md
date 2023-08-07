@@ -14,6 +14,7 @@ Explore a categorized collection of code examples and explanations for mainstrea
 - [**Operations On Objects**](./Javascript/OperationsOnObjects.md)
 - [**Conditional Structures**](./Javascript/ConditionalStatements.md)
 - [**Functions**](./Javascript/Functions.md)
+- [**Utility Functions**](./Javascript/UtilityFunctions.md)
 - [**Loops**](./Javascript/OperationsOnStrings.md)
 - [**Object Oriented Programming**](./Javascript/Opp.md)
 
