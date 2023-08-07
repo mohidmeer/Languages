@@ -8,6 +8,10 @@
     return a + b;
     
     }
+    
+     let sum=(add(2,3)) //calling the function
+
+     console.log(sum)
 ```
 
 ## Declaring Arrow function
@@ -22,6 +26,10 @@ There is a catch arrow function get executed as soon they are declared but a sim
     return a + b;
     
     }
+
+     let sum=(add(2,3)) //calling the function
+
+     console.log(sum)
 ```
 
 ## Declaring Asynchronous functions
@@ -50,14 +58,59 @@ cosnt fetchData = async () => {
 
 ```
 
-## Calling A function
+## Promises
 
-``` javascript lineons
-    
-    let sum=(add(2,3))
-     
-     console.log(sum)
-     
-     //outputs 5 
+it is a special object used to represent the eventual completion (or failure) of an asynchronous operation and its resulting value.
+Promises are a part of the ECMAScript 6 (ES6) standard and are designed to simpliy working with asynchronous code and handling asynchronous operations
+
+### A promise can have three states
+
+- **Pending**: The initial state of a Promise. It is neither fulfilled nor rejected.
+
+- **Fulfilled**: The Promise has successfully completed its operation, and a value is available.
+
+- **Rejected**: The Promise encountered an error or failed to complete its operation, and a reason for the failure is available.
+  
+### A promise have two methods
+
+- **.then()**  : method to handle the successful resolution of the Promise (when it is fulfilled)
+- **.catch()** : method to handle any errors that may occur during the Promise's execution (when it is rejected)
+
+``` javascript lineons 
+  const promise = new Promise((resolve, reject) => {
+        // Asynchronous operation
+
+        // If the operation is successful, call 'resolve(value)'
+        
+        // If the operation fails, call 'reject(error)'
+    });
 ```
 
+### Example
+
+``` javascript lineons
+
+      const fetchData = new Promise((resolve, reject) => {
+      
+      // Simulate an asynchronous operation (e.g., API call)
+      
+      setTimeout(() => {
+        const data = { id: 1, name: 'John Doe' };
+        // Resolve the Promise with the data
+        resolve(data);
+        // Or reject the Promise with an error
+        // reject(new Error('Failed to fetch data'));
+      }, 2000);
+    
+    });
+
+    // Using .then() and .catch() to handle the Promise
+    fetchData.then(data => {
+      console.log('Data fetched successfully:', data);
+    }).catch(error => {
+      console.error('An error occurred:', error);
+    });
+
+```
+
+In this example, the **fetchData** Promise simulates an asynchronous operation using setTimeout and resolves the Promise after a delay of 2000 milliseconds. The .then() method handles the successful resolution of the Promise and the .catch() method handles any errors that may occur during the Promise's execution
