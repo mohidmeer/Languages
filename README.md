@@ -11,7 +11,9 @@ Explore a categorized collection of code examples and explanations for mainstrea
 - [**Operations On Strings**](./Javascript/OperationsOnStrings.md)
 - [**Operations On Arrays**](./Javascript/OperationsOnArray.md)
 - [**Operations On Booleans**](./Javascript/OperationsOnBoolean.md)
+- [**Operations On Objects**](./Javascript/OperationsOnObjects.md)
 - [**Conditional Structures**](./Javascript/OperationsOnStrings.md)
 - [**Loops**](./Javascript/OperationsOnStrings.md)
+- [**Object Oriented Programming**](./Javascript/Opp.md)
 
 ## Python
