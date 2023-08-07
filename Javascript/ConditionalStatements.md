@@ -32,7 +32,7 @@ if (condition1) {
 
 ```
 
-## switch statement
+## Switch statement
 
 The switch statement provides a way to select one of many code blocks to be executed based on the value of an expression. It is often used when there are multiple possible cases.
 
@@ -52,49 +52,59 @@ The switch statement provides a way to select one of many code blocks to be exec
 
 These conditional statements allow you to control the flow of your program based on certain conditions, making your code more flexible and capable of handling different scenarios
 
+## Try Catch Block
+
+The try...catch statement in JavaScript is classified as a type of error-handling mechanism.it is a conditional statement specifically designed for handling exceptions or errors that may occur during the execution of code.
+
+The try...catch statement allows you to attempt to execute a block of code within the try block if an error occur during the execution of the code inside the try block the execution is immediately transferred to the corresponding catch block. The catch blck allows you to handle the error gracefully, preventing the program from terminating abruptly.
+
+``` javascript lineons
+
+  try {
+       
+       const result = 10 / 0; // This will throw a "division by zero" error
+       
+       console.log(result); // This line will not be executed due to the error
+  
+      } 
+  
+       catch (error) {
+      
+            console.log("An error occurred:", error.message);
+      }
+
+```
+
+
 ## Conditions Possible Values Inside If(condition)
 
-Truthy values are any values that are considered "true" when evaluated in a boolean context. Falsy values, on the other hand, are values that are considered "false" in a boolean context. In JavaScript, the following values are considered falsy:
-
-``` javascript lineons
-let condition = false ;
-
-let condition = null  ;
-
-let condition =  undefined;
-
-let condition = 0;
-
-let condition = NaN
-
-let condtion = ""
- 
-```
-
-In JavaScript, the following values are considered Truthy:
-
-``` javascript lineons
-let condition = true ;
-
-let condition = 'AnyStringOtherThanEmpty'  ;
-
-let condition =  {} ;
-
-let condition = [];
-
-let condition = 1
-
-let condtion =  2.1  //Any number other than zero 
-
-let condtion = -2.1  
-
-```
-
-## Examples For If Statements
+Truthy values are any values that are considered "true" when evaluated in a boolean context. Falsy values, on the other hand, are values that are considered "false" in a boolean context.
 
 ### Truthy Values
 
+  In JavaScript, the following values are considered Truthy:
+
+  ``` javascript lineons
+  let condition = true ;
+
+  let condition = 'AnyStringOtherThanEmpty'  ;
+
+  let condition =  {} ;
+
+  let condition = [];
+
+  let condition = 1
+
+  let condtion =  2.1  //Any number other than zero 
+
+  let condtion = -2.1  
+
+```
+
 ```javascript lineons
+    if (true) {
+    console.log("This is truthy"); // Output: This is truthy
+    }
     if ("hello") {
     console.log("This is truthy"); // Output: This is truthy
     }
@@ -117,6 +127,23 @@ let condtion = -2.1
 ```
 
 ### False Value
+
+In JavaScript, the following values are considered falsy:
+
+``` javascript lineons
+let condition = false ;
+
+let condition = null  ;
+
+let condition =  undefined;
+
+let condition = 0;
+
+let condition = NaN
+
+let condtion = ""
+ 
+```
 
 ```javascript lineons
    if (false) {

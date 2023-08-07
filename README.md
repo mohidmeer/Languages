@@ -13,6 +13,7 @@ Explore a categorized collection of code examples and explanations for mainstrea
 - [**Operations On Booleans**](./Javascript/OperationsOnBoolean.md)
 - [**Operations On Objects**](./Javascript/OperationsOnObjects.md)
 - [**Conditional Structures**](./Javascript/ConditionalStatements.md)
+- [**Functions**](./Javascript/Functions.md)
 - [**Loops**](./Javascript/OperationsOnStrings.md)
 - [**Object Oriented Programming**](./Javascript/Opp.md)
 
