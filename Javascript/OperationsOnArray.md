@@ -148,21 +148,37 @@ The reduce() function iterates through the array and accumulates the result of a
 
 It is used to sort the elements of an array in place and return the sorted array
 
-- Sorting the elements of an array: array.sort()
+### Sorting In Asending
 
 ```javascript lineons
-
-    let sortedArray = combinedArray.sort((a, b) => a - b);
+    let numbers = [10, 2, 33, 45, 5];
     
-    console.log(sortedArray); 
-
-    // Output: [1, 2, 6, 7, 8, 9, 10]
+    numbers.sort();
+    
+    console.log(numbers); // Output: [2, 5, 10, 33, 45]
 
     let fruits = ['banana', 'apple', 'orange', 'grape'];
     
     fruits.sort();
 
     console.log(fruits); // Output: ['apple', 'banana', 'grape', 'orange']
+    
+```
+
+### Sorting In Desending
+
+```javascript lineons
+    let numbers = [10, 2, 33, 45, 5];
+    
+    numbers.sort((a, b) => b - a);
+    
+    console.log(numbers); // Output: [45, 33, 10, 5, 2]
+
+    let fruits = ['banana', 'apple', 'orange', 'grape'];
+    
+    fruits.sort((a, b) => b.localeCompare(a));
+    
+    console.log(fruits); // Output: ['orange', 'grape', 'banana', 'apple']
     
 ```
 
