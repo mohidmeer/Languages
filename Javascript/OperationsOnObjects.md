@@ -108,27 +108,7 @@ You can clone or merge objects using Object.assign() or the spread operator (...
 person.sayHello(); // Output: Hello, my name is John
 
 ```
-## Maping Over Array Of Objects And Updating One
 
-``` javascript Lineons
-
- let comments = [{_id:1,content='this is a comment' },
-                 {_id:2,content='this is a comment2' }]
-    
-    let commentId=1;
-    
-    let updatedComments= comments.map(comment =>{ 
-        if (comment._id===commentId){
-            return {...comment , content: 'THIS IS UPDATED COMMENT' };
-           }
-           return comment
-      })
-
-  console.log(updatedComments)
-  // Outputs[{_id:1,content='THIS IS UPDATED COMMENT' },  {_id:2,content='this is a comment2' }]
-```
-
-## Removing One Item From array Of objects
 
 ```javascript lineons
    let comments = [{_id:1,content='this is a comment' },

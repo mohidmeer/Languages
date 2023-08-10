@@ -19,3 +19,4 @@ Explore a categorized collection of code examples and explanations for mainstrea
 - [**Object Oriented Programming**](./Javascript/Opp.md)
 
 ## Python
+- [**Data Types**](./Python/DataTypes.md)

@@ -201,3 +201,34 @@ It is used to sort the elements of an array in place and return the sorted array
     console.log(reversedArray); 
     // Output: [10, 9, 8, 7, 6, 2, 1]
 ```
+
+## Maping Over Array Of Objects And Updating One
+
+``` javascript Lineons
+
+ let comments = [{_id:1,content='this is a comment' },
+                 {_id:2,content='this is a comment2' }]
+    
+    let commentId=1;
+    
+    let updatedComments= comments.map(comment =>{ 
+        if (comment._id===commentId){
+            return {...comment , content: 'THIS IS UPDATED COMMENT' };
+           }
+           return comment
+      })
+
+  console.log(updatedComments)
+  // Outputs[{_id:1,content='THIS IS UPDATED COMMENT' },  {_id:2,content='this is a comment2' }]
+```
+
+## Removing One Item From array Of objects
+
+```javascript lineons
+   let comments = [{_id:1,content='this is a comment' },
+                  {_id:2,content='this is a comment2' }]
+
+  cosnt NewArray =  comments.filter(c =>c._id !== 1)
+
+  console.log(NewArray)
+  //outputs [{_id:2,content='this is a comment2' }]
